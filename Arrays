@@ -1,0 +1,89 @@
+*** ARRAYS ***
+
+BASICS OF ARRAYS
+
+package Arrays;
+
+public class basicOfArray {
+    public static void main(String[] args) {
+        int [] x = {6,34,5,88,9};
+//        INDEXING
+        System.out.println(x[4]);
+//        uodating elements
+        x [3] = 89;
+        System.out.println(x[3]);
+    }
+}
+
+**************************************************************************
+ *** SUM OF ALL ARRAYS ***
+
+package Arrays;
+
+public class sumofallArrays {
+    public static void main(String[] args) {
+        int [] arr = {2,3,1,0,6};
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum= sum+arr[i];
+
+        }
+        System.out.println("Sum = " +sum);
+    }
+}
+
+***************************************************************************************
+*** EVEN SUM OF ARRAY  ***
+
+package Arrays;
+
+public class EvenSum {
+    public static void main(String[] args) {
+        int [] arr = {2,6,8,9,4,7};
+        for (int i = 0; i < arr.length; i++) {
+            if( arr[i] % 2 == 0){
+                System.out.println(arr[i]);
+            }
+
+        }
+    }
+}
+
+*********************************************************************************************
+
+*** ODD SUM OF ARRAY ***
+
+package Arrays;
+
+public class printoddNumbers {
+    public static void main(String[] args) {
+        int[] arr = {2, 5, 8, 3, 6, 7};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                System.out.println(arr[i]);
+            }
+        }
+    }
+}
+
+*********************************************************************************************
+*** COUNT POSITIVE NUMBERS ***
+
+package Arrays;
+
+public class countPositiveNumber {
+    public static void main(String[] args) {
+        int[] arr = {3, -4, 7, -2, 9};
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                count++;
+            }
+
+
+        }
+        System.out.println("positive number = " +count);
+    }
+}
+
+
