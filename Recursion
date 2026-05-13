@@ -35,3 +35,22 @@ public class basics2 {
     }
 }
 
+********************************************************
+
+** SUM OF DIGITS **
+
+package Recursion;
+
+public class SumOFDigit {
+    static int sumoFDigit(int n){
+        if(n == 0){
+            return 0;
+        }
+        return  (n % 10) + sumoFDigit(n/10);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sumoFDigit(1234));
+    }
+}
+
